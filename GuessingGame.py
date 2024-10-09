@@ -19,12 +19,14 @@ while chosenNum != supriseNum:
     
     
     if chosenNum < supriseNum:
-        print("Your guess is too low, try again")
+        print(f"Your guess is too low, try again")
+        chosenNum = int(input("Your guess:     "))
 
     elif chosenNum > supriseNum:
-        print("Your guess is too high, try again.")
+        print(f"Your guess is too high, try again")
+        chosenNum = int(input("Your guess:    "))
 
     else:
-        print("Your guess is correct. Nice job!")
-
-
+        break
+ 
+print("Your guess is correct. Nice job!")
