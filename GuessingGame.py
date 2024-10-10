@@ -1,14 +1,10 @@
 #Christopher Morgan
 #CIS 261
 #GuessingGame
-
 import random
-
 #Part 1
 print("Time to guess the number I'm thinking of!")
-
 #Part 2
-
 keepPlaying = "y"
 while keepPlaying == "y":
     attempts = 0
@@ -17,8 +13,7 @@ while keepPlaying == "y":
     supriseNum = random.randint(1,numberLimit)
     chosenNum = int(input("Guess a number within specified range:     "))
     attempts += 1
-    while chosenNum != supriseNum:
-    
+    while chosenNum != supriseNum:   
         if chosenNum < supriseNum:
             print(f"Your guess is too low, try again")
             chosenNum = int(input("Your guess:     "))
@@ -32,5 +27,4 @@ while keepPlaying == "y":
     print("Your guess is correct. Nice job!")
     print(f"\nYou guessed it in {attempts} attempts.")
     keepPlaying = input(f"\nWould you like to play again? (y/n):     ")
-
 print(f"\nGood Bye.")
